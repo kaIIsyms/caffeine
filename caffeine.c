@@ -104,7 +104,7 @@ int main(int argc, char *argv[]) {
       }
    }
 
-   VirtualProtect(baddr, 0x10000, PAGE_EXECUTE_READWRITE, &memoria); //0x40
+   VirtualProtect(baddr, 0x10000, PAGE_EXECUTE_READ, &memoria); //0x40
    entry ent =
      (entry)(baddr+ssemllc[0x00].VirtualAddress);
    ent();
