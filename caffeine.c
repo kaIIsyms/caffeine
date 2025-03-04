@@ -9,7 +9,7 @@
 
 //#define IMAGE_REL_AMD64_ADDR32   0x0002
 
-typedef struct // https://github.com/RealNeGate/Cuik/blob/7265c1a9b894ba75f053bbcf5d54b0f209592af1/include/tb_coff.h#L99
+typedef struct // https://learn.microsoft.com/en-us/windows/win32/debug/pe-format
 {
    uint16_t Machine;
    uint16_t NumberOfSections;
